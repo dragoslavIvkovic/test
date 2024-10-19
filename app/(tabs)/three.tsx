@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View } from 'react-native';
 
-import { useSelector } from 'react-redux';
 import { RootState } from '../store';
+import { useSelector } from 'react-redux';
 
-export default function TabTwoScreen() {
-  const text = useSelector((state: RootState) => state.text);
+export default function TabThreeScreen() {
+    const text = useSelector((state: RootState) => state.text);
   return (
     <View style={styles.container}>
-     <Text style={styles.title}>{text}</Text>
+       <Text style={styles.title}>{text}</Text>
       </View>
   );
 }
